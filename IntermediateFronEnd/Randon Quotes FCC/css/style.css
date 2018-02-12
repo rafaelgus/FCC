@@ -3,6 +3,21 @@ body{
   background-size: cover;
   color:#212121;
 }
+.quoteContainer {
+  background-color:#E1F5FE ;
+  padding: 50px;
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom:auto;
+  border-radius: 25px;
+  font-size: 1.25em;
+  padding-bottom: 1%;
+}
+.btn{
+  padding-top:1%;
+}
+
 footer{
   padding-top:150px;
 }

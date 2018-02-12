@@ -18,7 +18,7 @@ $(document).ready(function() {
         quote = res.quoteText;
         author = res.quoteAuthor;
 
-        $('#quote').text(quote);
+        $('#quote').text('Quote:  ' +  quote);
 
         if (author) {
           $('#author').text('Author: ' + author);
@@ -47,6 +47,11 @@ $('.getNewQuote').on('click', function(event) {
     quote = "\"" + quote + '"';
 
     window.open("https://twitter.com/intent/tweet?text=" + quote + " &hashtags=favorite");
+  })
+  $('.githubPage').on('click', function(event) {
+    event.preventDefault();
+
+    window.open("https://github.com/rafaelgus/FCC/tree/master/IntermediateFronEnd/Randon%20Quotes%20FCC");
   })
 
 })
