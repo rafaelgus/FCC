@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-<link rel='stylesheet prefetch' href='https://github.com/escueladigital/EDgrid/blob/master/css/ed-grid.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.com/libraries/weather-icons'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css'>
 
       <link rel="stylesheet" href="css/style.css">
 
@@ -34,7 +33,7 @@
             <a href="#"> Local Weather</a>
           </li>
           <li class="b">
-            <a href="#"><span ><i class="fa fa-cloud"></i></span>Celsius/Farenheit</a>
+            <a href="#"><span ><i class="fa fa-cloud"></i></span>Intermediate Frond End Development Projects</a>
           </li>
 
         </ul>
@@ -43,8 +42,17 @@
     </div>
     <div class="content">
       <div class='block'>
-        <h1 class= 'text-center'><span id='currentTemp'>...<span></h1>
-        <h1 class= 'text-center'><span id='currentWheather'>...<span></h1><br>Country Name: <span id = 'country'></span><br>City: <span id='city'></span><br>Latitude: <span id'latitude'></span><br>Longitude: <span id ='longitude'></span><br><i class='wi wi-thermometer' style='font-size: 3em'></i>
+        <div class="col-2">
+            <button id="btnCelsius" onclick="getCelsius()">°C</button>
+          </div>
+          <div class="col-2">
+            <button id="btnFahrenheit" onclick="getFahrenheit()">°F</button>
+          </div>
+        <div  class='text-center' id="weather-icon"></div>
+        <h1 class= 'text-center'><span id='temp'>...<span></h1>
+         <h1 class= 'text-center'><span id='description'>...<span></h1> 
+           <h1 class= 'text-center'><span id='place'>...<span></h1>
+        <h1 class= 'text-center'><span id='dateTime'>...<span></h1><br>Humidity: <span class='text-center' id='humidity'></span><i class='wi wi-humidity' style='font-size: 1em'></i>       |   WindSpeed: <span id='windSpeed'></span><i class='wi wi-strong-wind' style='font-size: 1em'></i>     |   Temp: <span id ='celsius'></span><i class='wi wi-thermometer' style='font-size: 1em'></i><br>
           
       </div>
       
@@ -52,7 +60,7 @@
     <div class="footer">
       <p class="pow">
         2018 © rghf | powered by : Rafael Herrera | <br>
-        <a href="#" class="myButton"><i class="fa fa-github fa-fw " aria-hidden="true "></i>Project Repo</a>
+        <a  target='blank' href="https://github.com/rafaelgus/FCC/tree/master/IntermediateFronEnd/weather-local-data" class="myButton"><i class="fa fa-github fa-fw " aria-hidden="true "></i>Project Repo</a>
         </br>
       </p>
     </div>
